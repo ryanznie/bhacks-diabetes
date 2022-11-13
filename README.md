@@ -1,4 +1,4 @@
-# bhacks-Personal-EMR
+# bhacks-My-EMR
 **Project Repository for BostonHacks 2022**
 
 Authors: Jane Yoo, Michelle Yung, Ryan Nie, Tyler Nguyen
