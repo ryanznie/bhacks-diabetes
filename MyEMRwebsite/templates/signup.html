@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+    <head>
+    <title>profile</title>
+    </head>
+    
+    <header>
+        <h2 style="font-size: x- large;font-weight: 200; line-height:40px; font-family: 'Roboto'">W e l c o m e &nbsp&nbsp B a c k !</h2>
+        <h1 style="font-weight: 700;font-size: xx-large;  letter-spacing:2px; font-family: 'Roboto';"><strong>Jane Doe</strong></h1>
+    </header>
+
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <h1 style="color: #351b69;"><b style="font-size:40px">✸</b> MyEMR</h1>
+                <ul>
+                    <li><a href="/profile">Profile</a></li>
+                    <li><a href="/risks">Risk Screening</a></li>
+                    <li><a href="/survey">Edit Info</a></li>
+                    <li><a href="/login">Login</a></li>
+                    <li><a href="/signup">Sign Up</a></li>
+                    <li><a href="#">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr> 
+
+        <div class="boxes">
+        <form method = "POST">
+            <h3 align="center", style="color: #351b69; text-align: center; font-size: xx-large;margin-top: 20px;">Sign Up</h3>
+            <div class="form-group">
+                <label for="email">Email Address: </label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter email"/>
+            </div>
+            <div class="form-group">
+                <label for="firstName">First Name: </label>
+                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter first name"/>
+            </div>
+            <div class="form-group">
+                <label for="password">Password: </label>
+                <input type="text" class="form-control" id="password" name="password" placeholder="Enter password"/>
+            </div>
+            <br/>
+            <div class="form-group">
+            <button type="submit" class="btn btn-primary">Enter</button>
+            </div>
+        </form>
+    </div>
+
+<style>
+        
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+
+    header {
+    background-color: #4f318d;
+    color: #eaf4ff;
+    padding: 20px 0;
+    text-align: center;
+    }
+
+    .banner{
+        width: 100%;
+        background-color: #d0d3e4;
+        /* background-size: cover;
+        background-position: center; */
+    }
+
+    .navbar{
+        width: 85%;
+        margin: auto;
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar a{
+        font-size: larger;
+    }
+
+    .navbar ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0 10px;
+        position: relative;
+    }
+
+    .navbar ul li a{
+        text-decoration: none;
+        color: #351b69;
+        text-transform: uppercase;
+    }
+
+    .navbar ul li::after{ /*under lines the words*/
+        content: '';
+        height: 3px;
+        width: 0;
+        background: #351b69;
+        position: absolute;
+        left:0;
+        bottom: -1px;
+        transition: 0.5s
+    }
+
+    .navbar ul li:hover::after{
+        width: 100%;
+    }
+
+    .form-group{
+        list-style: none;
+        margin: 0 10px;
+        position: relative;
+        align-items: center;
+        font-size: 30px;
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    .boxes{
+        align-items: center;
+    }
+
+    input{
+        Width:300px;
+        height:30px;
+        Color:rgb(0, 0, 0);
+        Font-size:30px; 
+    }
+
+    .boxes button{ 
+        Font-size:30px;
+        height: auto;
+        width: auto;
+        padding: 10px 10px;
+        text-align: center;
+        align-items: center;
+    }
+    </style>
+    </body>
+</html>

@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+    <head>
+    <title>profile</title>
+    </head>
+    
+    <header>
+        <h2 style="font-size: x- large;font-weight: 200; line-height:40px; font-family: 'Roboto'">W e l c o m e &nbsp&nbsp B a c k !</h2>
+        <h1 style="font-weight: 700;font-size: xx-large;  letter-spacing:2px; font-family: 'Roboto';"><strong>Jane Doe</strong></h1>
+    </header>
+
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <h1 style="color: #351b69;"><b style="font-size:40px">✸</b> MyEMR</h1>
+                <ul>
+                    <li><a href="/profile">Profile</a></li>
+                    <li><a href="/risks">Risk Screening</a></li>
+                    <li><a href="/survey">Edit Info</a></li>
+                    <li><a href="/login">Login</a></li>
+                    <li><a href="/signup">Sign Up</a></li>
+                    <li><a href="#">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <h1>&nbsp</h1>
+        <h1 style="color: #351b69; text-align: center;">&nbspPlease input your information:</h1>
+        <div class="content">
+            <form1>
+
+                <h1><label for="age"> Age: </label> </h1>
+                <input type="number" id="age" name="age">
+                
+                <h1><label for="weight"> Weight (lbs): </label> </h1>
+                <input type="number" id="weight" name="weight">
+
+                <h1><label for="height"> Height:</label> </h1>
+                <input type="number" id="height" name="height">
+            </form1>
+            <form2>
+                <h1>Are you a current smoker?</h1>
+                <input type="radio" id="yes" name="smoker" value="true">
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="no" name="smoker" value="false">
+                <label for="no">No</label><br>
+
+                <h1>Have you ever suffered from a stroke?</h1>
+                <input type="radio" id="yes" name="stroke" value="true">
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="no" name="stroke" value="false">
+                <label for="no">No</label><br>
+
+                <h1>Do you have high blood pressure?</h1>
+                <input type="radio" id="yes" name="bloodpressure" value="true">
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="no" name="bloodpressure" value="false">
+                <label for="no">No</label><br>
+
+                <h1>Have you EVER been told by a doctor, nurse or other health professional that your blood cholesterol is high??</h1>
+                <input type="radio" id="yes" name="cholesterol" value="true">
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="no" name="cholesterol" value="false">
+                <label for="no">No</label><br>
+            </form2>
+                <h1>&nbsp</h1>
+                <a href="/home"></a><input type="submit" value="submit"></a>
+
+        </div>
+   
+
+        <style>
+        
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: sans-serif;
+            }
+    
+            header {
+            background-color: #4f318d;
+            color: #eaf4ff;
+            padding: 20px 0;
+            text-align: center;
+            }
+    
+            .banner{
+                width: 100%;
+                background-color: #d0d3e4;
+                /* background-size: cover;
+                background-position: center; */
+            }
+    
+            .navbar{
+                width: 85%;
+                margin: auto;
+                padding: 20px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+    
+            .navbar a{
+                font-size: larger;
+            }
+    
+            .navbar ul li{
+                list-style: none;
+                display: inline-block;
+                margin: 0 10px;
+                position: relative;
+            }
+    
+            .navbar ul li a{
+                text-decoration: none;
+                color: #351b69;
+                text-transform: uppercase;
+            }
+    
+            .navbar ul li::after{ /*under lines the words*/
+                content: '';
+                height: 3px;
+                width: 0;
+                background: #351b69;
+                position: absolute;
+                left:0;
+                bottom: -1px;
+                transition: 0.5s
+            }
+    
+            .navbar ul li:hover::after{
+                width: 100%;
+            }
+            
+            .content h1{
+                Font-size:25px;
+                padding: 25px 0;
+                margin: 0 20px;
+            }
+
+            .content a{ 
+                Font-size:30px;
+            }
+            .content { 
+                width: 1000px;
+                margin: 30px 60px;
+                list-style: none;
+                padding: 25px 30x;
+                display: inline-block;
+                align-items: center;
+                position: relative;
+                justify-content: space-between;
+        }
+
+        .content form1{
+            width: 1000px;
+            margin: auto;
+            list-style: none;
+            padding: 25px 30px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            justify-content: space-between;
+        }
+
+        input{
+            Width:100px;
+            height:30px;
+            Color:rgb(0, 0, 0);
+            Font-size:30px; 
+
+        }
+
+        </style>
+    </body>
+</html>
