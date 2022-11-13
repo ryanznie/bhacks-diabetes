@@ -25,9 +25,20 @@
         </div>
         <hr> 
         <div class="content">
-            <h1>Calculate your risks here:</h1>
-            <div><button type="button"><span></span>Calculate Diabetes Risk</button></div>
+            <leftside>
+                <h1>Calculate your risks here:</h1>
+                <div>
+                    <button type="button"><span></span>Diabetes Risk</button>
+                    <button type="button"><span></span>Stroke Risk</button>
+                </div>
+            </leftside>
+            <rightside>
+                <h1>Your risk is: 46%</h1>
+                <p>&nbsp</p>
+                <p>This percentage is calculated from a open-source dataset. If this percentage is concerning to you, or if you have any questions, please seek a professional.</p>
+            </rightside>
         </div>
+        
 
     <style>
         
@@ -58,6 +69,10 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+        }
+
+        .navbar a{
+            font-size: larger;
         }
 
         .navbar ul li{
@@ -92,7 +107,7 @@
             width: 1200px;
             margin: auto;
             list-style: none;
-            padding: 25px 0;
+            padding: 60px 0;
             display: flex;
             align-items: center;
             position: relative;
@@ -101,6 +116,26 @@
 
         .content h1{
             color: #351b69;
+            font-size: xx-large;
+        }
+
+        .content p{
+            color: #351b69;
+            font-size: x-large;
+            line-height: 30px;
+        }
+
+        .content rightside{
+            width: 400px;
+            margin: auto;
+            list-style: none;
+            padding: 25px 30px;
+            display: inline-block;
+            align-items: center;
+            position: relative;
+            justify-content: space-between;
+            background: rgba(210, 210, 210, 0.25);
+            border-radius: 36px;
         }
 
         button{
