@@ -1,4 +1,4 @@
-# bhacks-My-EMR
+# bhacks-Personal-EMR
 **Project Repository for BostonHacks 2022**
 
 Authors: Jane Yoo, Michelle Yung, Ryan Nie, Tyler Nguyen
@@ -34,3 +34,7 @@ To help you understand a little more about diabetes, below are some quick facts 
 - Get regular exercise. Exercise has many health benefits, including helping you to lose weight and lower your blood sugar levels. These both lower your risk of type 2 diabetes. Try to get at least 30 minutes of physical activity 5 days a week. If you have not been active, talk with your health care professional to figure out which types of exercise are best for you. You can start slowly and work up to your goal.
 - Don't smoke. Smoking can contribute to insulin resistance, which can lead to type 2 diabetes. If you already smoke, try to quit.
 - Talk to your health care provider to see whether there is anything else you can do to delay or to prevent type 2 diabetes. If you are at high risk, your provider may suggest that you take one of a few types of diabetes medicines.
+
+
+### Limitations/Future Steps
+The designed web-app at the moment has limited variables. To become more inclusive, more variables could be submitted by the patient, and more machine-learning models can be deployed to calculate risk percentage for many other diseases. In addition, It would be helpful to include a scanner in the program that takes in a photo or pdf of a patient's medical records and take away the most important information and store it into the patient profiles. An issue that might come up is that it would be hard to verify which pieces of the information is patient stated or true. In order to verify certain information, a system could be created to mark certain information as "verified" if a verified individuals of the patient's healthcare team approves it.
