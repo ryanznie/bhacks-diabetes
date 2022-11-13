@@ -1,0 +1,35 @@
+{% extends "profile.html" %}
+{% block title %}Home{% endblock %} <!--whatever we change here overrides base.html-->
+
+{% block content %}
+<div class="banner">
+    <div class="navbar">
+        <h1 class="color:351b69;">Purriod</h1>
+    <u1>
+        <li><a href="/survey">Edit Info</a></li>
+    </u1>
+    </div>
+</div>
+
+<div class="content">
+    <basic>
+        <h3>Basic Info</h3>
+        <p> </p>
+        <p>Name: {{user.name}}</p>
+        <p>Age: {{user.age}}</p>
+        <p>Weight: {{user.weight}}</p>
+        <p>Height: {{user.height}}</p>
+    </basic>
+    <lifestyle>
+        <p>Smoker: {{user.smoker}}</p>
+    </lifestyle>
+    <history>
+        <h3>History</h3>
+        <p>Prev stroke: {{user.stroke}}</p>
+        <p>High blood pressure: {{user.highbp}}</p>
+        <p>High cholesterol: {{user.highchol}}</p>
+    </history>
+</div>
+
+
+{% endblock %}
