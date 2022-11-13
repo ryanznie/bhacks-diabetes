@@ -5,9 +5,9 @@ Authors: Jane Yoo, Michelle Yung, Ryan Nie, Tyler Nguyen
 
 Problem:____
 
-Diabetes affects ~10% of the world population and can drastically affect the public health of the lower socioeconomic class with the high cost of insulin in the United States.
+Our goal is to create a patient centered, personal electronic medical record system to keep track of all of the health information. Our inspiration stems from our recognition of how many patients see multiple providers and different facilities, but all of the different facilities have different pictures or profiles on the patient, making it hard to keep track of the true and updated information. We propose that the best way to combat this is to create a organizational system where the patient keep tracks of their own data (additional development would include the contributions of providers and methods of sending data over to other servers where systems of verifying whether the data is accurate would be needed). In addition, this web-app is also able to calculate the risk percentage for certain diseases by comparing the patient data to an open-source dataset. The website will use machine learning to continuously evaluate your risk for certain diseases and will serve as a way of disease prevention. We plan to use this website to make keeping track of one's health less stressful to promote healthier lifestyles.
 
-Our goal is to make your own medical history and medicines more accessible to you, the patient. Our proposal is a medical profile which will monitor your risk for diabetes, your medical history, your medicines, and upcoming appointments -- all in one page. The website will use machine learning to continuously evaluate your risk for diabetes and provide patients who are at risk with suggestions to lifestyle changes. We plan to use this website to bring more awareness to diabetes and to promote healthier lifestyles.
+To demonstrate the machine learning, A diabetes risk calculator was created. Diabetes affects ~10% of the world population and can drastically affect the public health of the lower socioeconomic class with the high cost of insulin in the United States.
 
 To help you understand a little more about diabetes, below are some quick facts from [MedlinePlus](https://medlineplus.gov/howtopreventdiabetes.html).
 
