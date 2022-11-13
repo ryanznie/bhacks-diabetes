@@ -1,0 +1,158 @@
+{%extends "profile.html"%}
+
+{%block title%} Risk {%endblock%}
+
+{%block content%}
+        <hr> 
+        <div class="content">
+            <leftside>
+                <h1>Calculate your risks here:</h1>
+                <div>
+                    <button type="button"><span></span>Diabetes Risk</button>
+                    <button type="button"><span></span>Stroke Risk</button>
+                </div>
+            </leftside>
+            <rightside>
+                <h1>Your risk is: 46%</h1>
+                <p>&nbsp</p>
+                <p>This percentage is calculated from a open-source dataset. If this percentage is concerning to you, or if you have any questions, please seek a professional.</p>
+            </rightside>
+        </div>
+{%endblock%}        
+
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        header {
+        background-color: #4f318d;
+        color: #eaf4ff;
+        padding: 20px 0;
+        text-align: center;
+        }
+
+        .banner{
+            width: 100%;
+            background-color: #d0d3e4;
+            /* background-size: cover;
+            background-position: center; */
+        }
+
+        .navbar{
+            width: 85%;
+            margin: auto;
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navbar a{
+            font-size: larger;
+        }
+
+        .navbar ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 10px;
+            position: relative;
+        }
+
+        .navbar ul li a{
+            text-decoration: none;
+            color: #351b69;
+            text-transform: uppercase;
+        }
+
+        .navbar ul li::after{ /*under lines the words*/
+            content: '';
+            height: 3px;
+            width: 0;
+            background: #351b69;
+            position: absolute;
+            left:0;
+            bottom: -1px;
+            transition: 0.5s;
+        }
+
+        .navbar ul li:hover::after{
+            width: 100%;
+        }
+
+        .content {
+            width: 1200px;
+            margin: auto;
+            list-style: none;
+            padding: 60px 0;
+            display: flex;
+            align-items: center;
+            position: relative;
+            justify-content: space-between;
+        }
+
+        .content h1{
+            color: #351b69;
+            font-size: xx-large;
+        }
+
+        .content p{
+            color: #351b69;
+            font-size: x-large;
+            line-height: 30px;
+        }
+
+        .content rightside{
+            width: 400px;
+            margin: auto;
+            list-style: none;
+            padding: 25px 30px;
+            display: inline-block;
+            align-items: center;
+            position: relative;
+            justify-content: space-between;
+            background: rgba(210, 210, 210, 0.25);
+            border-radius: 36px;
+        }
+
+        button{
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: x-large;
+            border: 2px solid #351b69;
+            background: transparent;
+            color: #351b69;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        span{
+            background: #351b69;
+            height: 100%;
+            width: 0%;
+            border-radius: 25px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: 0.5s;
+        }
+
+        button:hover span{
+            width: 100%;
+        }
+
+        button:hover{
+            border: none;
+            color: #fff;
+        }
+
+    </style>
