@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+    <head>
+    <title>risks</title>
+    </head>
+    
+    <header>
+        <h2 style="font-size: larger;font-weight: 200; font-family: 'Roboto';">W e l c o m e &nbsp&nbsp B a c k !</h2>
+        <h1 style="font-weight: 700;font-size: xx-large; letter-spacing:1px; font-family: 'Roboto';"><strong>Jane Doe</strong></h1>
+    </header>
+
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <h1 style="color: #351b69;">Purriod</h1>
+                <ul>
+                    <li><a href="/profile">Profile</a></li>
+                    <li><a href="/risks">Risk Screen</a></li>
+                    <li><a href="#">Edit Info</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr> 
+        <div class="content">
+            <h1>Calculate your risks here:</h1>
+            <div><button type="button"><span></span>Calculate Diabetes Risk</button></div>
+        </div>
+
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        header {
+        background-color: #4f318d;
+        color: #eaf4ff;
+        padding: 20px 0;
+        text-align: center;
+        }
+
+        .banner{
+            width: 100%;
+            background-color: #d0d3e4;
+            /* background-size: cover;
+            background-position: center; */
+        }
+
+        .navbar{
+            width: 85%;
+            margin: auto;
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navbar ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 10px;
+            position: relative;
+        }
+
+        .navbar ul li a{
+            text-decoration: none;
+            color: #351b69;
+            text-transform: uppercase;
+        }
+
+        .navbar ul li::after{ /*under lines the words*/
+            content: '';
+            height: 3px;
+            width: 0;
+            background: #351b69;
+            position: absolute;
+            left:0;
+            bottom: -1px;
+            transition: 0.5s;
+        }
+
+        .navbar ul li:hover::after{
+            width: 100%;
+        }
+
+        .content {
+            width: 1200px;
+            margin: auto;
+            list-style: none;
+            padding: 25px 0;
+            display: flex;
+            align-items: center;
+            position: relative;
+            justify-content: space-between;
+        }
+
+        .content h1{
+            color: #351b69;
+        }
+
+        button{
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: x-large;
+            border: 2px solid #351b69;
+            background: transparent;
+            color: #351b69;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        span{
+            background: #351b69;
+            height: 100%;
+            width: 0%;
+            border-radius: 25px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: 0.5s;
+        }
+
+        button:hover span{
+            width: 100%;
+        }
+
+        button:hover{
+            border: none;
+            color: #fff;
+        }
+
+    </style>
+    </body>
+</html>
